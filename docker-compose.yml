@@ -1,0 +1,12 @@
+postgres:
+  image: 'postgres:9.4.4'
+  environment:
+    POSTGRES_DB: starter
+    POSTGRES_USER: user
+    POSTGRES_PASSWORD: test
+  ports:
+    - '5432:5432'
+redis:
+  image: redis
+  ports:
+    - '6379:6379'
